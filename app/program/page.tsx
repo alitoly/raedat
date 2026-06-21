@@ -1,5 +1,13 @@
+import type { Metadata } from 'next';
 import Program from '@/components/Program';
 import { phases } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'البرنامج المتكامل في ريادة الأعمال',
+  description:
+    'البرنامج المتكامل في حاضنة رائدات: عشر محطات تدريبية من أول فكرة إلى التوسّع والاستدامة، تستهدف تسعين امرأة عُمانية في المرحلة الأولى.',
+  alternates: { canonical: '/program' },
+};
 
 export default function ProgramPage() {
   return (

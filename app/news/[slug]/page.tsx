@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import TransitionLink from '@/components/TransitionLink';
@@ -6,6 +7,25 @@ import { news } from '@/lib/data';
 
 export function generateStaticParams() {
   return news.map((n) => ({ slug: n.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const item = news.find((n) => n.slug === slug);
+  if (!item) return {};
+  return {
+    title: item.title,
+    description: item.summary,
+    alternates: { canonical: `/news/${item.slug}` },
+    openGraph: {
+      type: 'article',
+      title: item.title,
+      description: item.summary,
+      url: `/news/${item.slug}`,
+      images: [{ url: item.img, alt: item.title }],
+    },
+    twitter: { card: 'summary_large_image', title: item.title, description: item.summary, images: [item.img] },
+  };
 }
 
 export default async function NewsDetail({ params }: { params: Promise<{ slug: string }> }) {

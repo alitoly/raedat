@@ -1,4 +1,12 @@
+import type { Metadata } from 'next';
 import Impact from '@/components/Impact';
+
+export const metadata: Metadata = {
+  title: 'قياس الأثر والاستدامة',
+  description:
+    'كيف تقيس حاضنة رائدات أثرها: مؤشر استدامة المشاريع، ومعايير اعتبار المشروع مستدامًا، وأبعاد قياس الأثر الاقتصادي والاجتماعي والمؤسسي.',
+  alternates: { canonical: '/impact' },
+};
 
 export default function ImpactPage() {
   return (

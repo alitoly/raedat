@@ -1,7 +1,15 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Social from '@/components/Social';
 import TransitionLink from '@/components/TransitionLink';
 import { news, press } from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'الأخبار والإنجازات',
+  description:
+    'آخر أخبار حاضنة رائدات: جائزة اليونسكو للتعليم المستدام، ورش التمكين الرقمي، وحفلات تكريم رائدات الأعمال، والتغطيات الصحفية.',
+  alternates: { canonical: '/news' },
+};
 
 export default function NewsPage() {
   return (
