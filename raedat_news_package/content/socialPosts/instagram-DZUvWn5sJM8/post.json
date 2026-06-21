@@ -1,0 +1,11 @@
+{
+  "id": "instagram-DZUvWn5sJM8",
+  "platform": "instagram",
+  "type": "reel",
+  "url": "https://www.instagram.com/reel/DZUvWn5sJM8/?igsh=MWNlb3ZsZnZzeXI0",
+  "shortcode": "DZUvWn5sJM8",
+  "media": [],
+  "embedUrl": "https://www.instagram.com/reel/DZUvWn5sJM8/embed/",
+  "note": "Instagram throttled direct fetch; keep the original URL and use embedUrl or manually download the reel cover/video if needed.",
+  "imageDownloadStatus": "blocked_by_instagram_throttling_original_url_kept"
+}

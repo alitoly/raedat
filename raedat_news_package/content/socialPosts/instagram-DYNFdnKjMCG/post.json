@@ -1,0 +1,11 @@
+{
+  "id": "instagram-DYNFdnKjMCG",
+  "platform": "instagram",
+  "type": "post",
+  "url": "https://www.instagram.com/p/DYNFdnKjMCG/?igsh=dXN2bGd2dGF1YnZx",
+  "shortcode": "DYNFdnKjMCG",
+  "media": [],
+  "embedUrl": "https://www.instagram.com/p/DYNFdnKjMCG/embed/",
+  "note": "Instagram throttled direct fetch; keep the original URL and use embedUrl or manually download the post image if needed.",
+  "imageDownloadStatus": "blocked_by_instagram_throttling_original_url_kept"
+}

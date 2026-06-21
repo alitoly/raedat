@@ -1,0 +1,41 @@
+import Program from '@/components/Program';
+import { phases } from '@/lib/data';
+
+export default function ProgramPage() {
+  return (
+    <main className="page">
+      <header className="page-head" data-reveal>
+        <span className="kicker">البرنامج المتكامل</span>
+        <h1 className="display page-head__title">البرنامج المتكامل في ريادة الأعمال</h1>
+        <p className="page-head__intro">
+          عشر محطات متّصلة تأخذ الرائدة من أول فكرة إلى مشروع مستدام، يتخللها تأهيل عملي واحتضان لتسعين امرأة عُمانية.
+        </p>
+      </header>
+
+      <Program />
+
+      <section className="section" id="audience">
+        <div className="split">
+          <div className="split__stats" data-reveal>
+            <span className="kicker">الفئة المستهدفة</span>
+            <h2 className="display section__title">٩٠ امرأة عُمانية في المرحلة الأولى</h2>
+            <p className="section__intro">احتُضنت تسعون امرأة عُمانية للاستفادة من الدعم والتأهيل في بيئة داعمة ومحفّزة للنمو المستدام.</p>
+            <div className="stat-row">
+              <div className="stat"><span className="stat__num" data-count="30">0</span><span className="stat__label">من ذوي الاحتياجات الخاصة</span></div>
+              <div className="stat"><span className="stat__num" data-count="30">0</span><span className="stat__label">من الأسر المنتجة</span></div>
+              <div className="stat"><span className="stat__num" data-count="30">0</span><span className="stat__label">باحثة عن عمل</span></div>
+            </div>
+          </div>
+          <div className="split__phases" data-reveal>
+            <h3 className="phases__title">آلية التنفيذ — ست مراحل</h3>
+            <ol className="timeline">
+              {phases.map((p, i) => (
+                <li key={p}><span className="timeline__no">{i + 1}</span><div><b>{p}</b></div></li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

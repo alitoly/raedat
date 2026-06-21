@@ -1,0 +1,239 @@
+{
+  "contentVersion": "2026-06-19",
+  "locale": "ar-OM",
+  "direction": "rtl",
+  "collections": {
+    "news": [
+      {
+        "id": "unesco-sustainable-education-award",
+        "slug": "raedat-unesco-sustainable-education-award",
+        "type": "achievement",
+        "status": "published",
+        "featured": true,
+        "title": "حاضنة رائدات تحصد جائزة التعليم المستدام",
+        "subtitle": "إنجاز وطني لأكاديمية المرأة العُمانية في فئة المشروع المتميز.",
+        "summary": "فازت أكاديمية المرأة العُمانية بجائزة التعليم المستدام عن برنامج «حاضنة رائدات»، في إنجاز وطني يعكس نجاح الأكاديمية في تقديم نموذج مستدام لتمكين المرأة وريادة الأعمال.",
+        "body": "أعلنت وكالة الأنباء العُمانية عن فوز أكاديمية المرأة العُمانية بجائزة التعليم المستدام في فئة «المشروع المتميز» عن برنامج «حاضنة رائدات»، في إنجاز وطني يُعد الأول من نوعه لسلطنة عُمان ويعكس المكانة المتنامية للمبادرات العُمانية في مجال تمكين المرأة وريادة الأعمال، ويؤكد نجاح الأكاديمية في تقديم نموذج مستدام يسهم في بناء قدرات المرأة العُمانية وتعزيز دورها في التنمية الاقتصادية والاجتماعية.",
+        "category": "إنجازات",
+        "tags": [
+          "حاضنة رائدات",
+          "أكاديمية المرأة العمانية",
+          "اليونسكو",
+          "التعليم المستدام",
+          "ريادة الأعمال"
+        ],
+        "date": null,
+        "source": {
+          "type": "uploaded_zip",
+          "folder": "news/unisco/news.txt"
+        },
+        "images": [
+          {
+            "path": "/images/news/unisco/WhatsApp Image 2026-06-18 at 11.53.20 PM.jpeg",
+            "originalZipPath": "news/unisco/WhatsApp Image 2026-06-18 at 11.53.20 PM.jpeg",
+            "alt": "صورة مرتبطة بخبر فوز حاضنة رائدات بجائزة التعليم المستدام",
+            "role": "cover"
+          }
+        ]
+      },
+      {
+        "id": "raedat-entrepreneurs-honoring-ceremony",
+        "slug": "raedat-entrepreneurs-honoring-ceremony",
+        "type": "event",
+        "status": "published",
+        "featured": false,
+        "title": "تكريم رائدات الأعمال المحتضنات في حاضنة رائدات",
+        "subtitle": "تكريم المشاركات في المعرض المصاحب لملتقى «المرأة الحكيمة تتحدث».",
+        "summary": "كرّمت أكاديمية المرأة العُمانية رائدات الأعمال المحتضنات في برنامج «حاضنة رائدات» تقديرًا لجهودهن في تطوير مشاريعهن وإبراز منتجاتهن وخدماتهن أمام الجمهور والجهات الداعمة.",
+        "body": "كرّمت أكاديمية المرأة العُمانية رائدات الأعمال المحتضنات في برنامج «حاضنة رائدات»، والمشاركات في المعرض المصاحب لملتقى «المرأة الحكيمة تتحدث»، وذلك تقديراً لجهودهن المتميزة وما حققنه من نجاحات في تطوير مشاريعهن الريادية وإبراز منتجاتهن وخدماتهن أمام الجمهور والجهات الداعمة.\n\nوشهد المعرض حضوراً لافتاً وتفاعلاً إيجابياً مع المشاريع المشاركة، التي تنوعت بين مجالات الابتكار والتقنية والصناعات الإبداعية والمشروعات الصغيرة والمتوسطة، حيث عكست هذه المبادرات مستوى التطور الذي وصلت إليه رائدات الأعمال المستفيدات من الحاضنة، وقدرتهن على تحويل الأفكار إلى مشاريع واعدة تسهم في دعم الاقتصاد الوطني.\n\nوأكدت أكاديمية المرأة العُمانية أن هذا التكريم يأتي في إطار حرصها على تشجيع رائدات الأعمال وتعزيز ثقافة الريادة والابتكار، بما يسهم في تمكين المرأة العُمانية وفتح آفاق أوسع أمام المشاريع النسائية لتحقيق النمو والاستدامة، انسجاماً مع مستهدفات رؤية عُمان 2040.",
+        "category": "فعاليات",
+        "tags": [
+          "تكريم",
+          "رائدات الأعمال",
+          "حاضنة رائدات",
+          "المرأة الحكيمة تتحدث",
+          "رؤية عمان 2040"
+        ],
+        "date": null,
+        "source": {
+          "type": "uploaded_zip",
+          "folder": "news/حفل تكريم رائدات الاعمال/news.txt"
+        },
+        "images": [
+          {
+            "path": "/images/news/honoring-ceremony/WhatsApp Image 2026-06-18 at 11.38.28 PM.jpeg",
+            "originalZipPath": "news/حفل تكريم رائدات الاعمال/WhatsApp Image 2026-06-18 at 11.38.28 PM.jpeg",
+            "alt": "حفل تكريم رائدات الأعمال المحتضنات في حاضنة رائدات",
+            "role": "cover"
+          },
+          {
+            "path": "/images/news/honoring-ceremony/WhatsApp Image 2026-06-18 at 11.58.15 PM.jpeg",
+            "originalZipPath": "news/حفل تكريم رائدات الاعمال/WhatsApp Image 2026-06-18 at 11.58.15 PM.jpeg",
+            "alt": "جانب من تكريم رائدات الأعمال",
+            "role": "gallery"
+          },
+          {
+            "path": "/images/news/honoring-ceremony/WhatsApp Image 2026-06-18 at 11.58.151 PM.jpeg",
+            "originalZipPath": "news/حفل تكريم رائدات الاعمال/WhatsApp Image 2026-06-18 at 11.58.151 PM.jpeg",
+            "alt": "معرض المشاريع المصاحب لحفل التكريم",
+            "role": "gallery"
+          }
+        ]
+      },
+      {
+        "id": "smart-design-with-canva-workshop",
+        "slug": "smart-design-with-canva-workshop",
+        "type": "workshop",
+        "status": "published",
+        "featured": false,
+        "title": "ورشة التصميم الذكي باستخدام كانفا",
+        "subtitle": "ورشة رقمية متخصصة لرائدات الأعمال المحتضنات في حاضنة رائدات.",
+        "summary": "أقامت أكاديمية المرأة العُمانية ورشة «التصميم الذكي باستخدام كانفا» لتعزيز المهارات الرقمية لدى رائدات الأعمال وتمكينهن من تطوير حضور مشاريعهن بصريًا وتسويقيًا.",
+        "body": "أقامت أكاديمية المرأة العُمانية ورشة عمل متخصصة بعنوان «التصميم الذكي باستخدام كانفا»، استهدفت رائدات الأعمال المحتضنات في برنامج «حاضنة رائدات»، وذلك في إطار جهود الأكاديمية الرامية إلى تعزيز المهارات الرقمية وتمكين المشاركات من توظيف الأدوات الحديثة في تطوير مشاريعهن وتسويق منتجاتهن وخدماتهن بكفاءة واحترافية.\n\nوتناولت الورشة عدداً من المحاور العملية، شملت أساسيات التصميم الإبداعي، وآليات استخدام منصة «كانفا» في إعداد الهوية البصرية للمشروعات، وتصميم المحتوى التسويقي لمنصات التواصل الاجتماعي، إلى جانب توظيف تقنيات الذكاء الاصطناعي المتاحة في المنصة لتسريع عمليات التصميم ورفع جودة المخرجات.\n\nوشهدت الورشة تفاعلاً من المشاركات، حيث أتاحت لهن فرصة تطبيق المهارات المكتسبة عملياً بما يسهم في تعزيز حضور مشاريعهن في البيئة الرقمية، ورفع جاهزيتها للتوسع والوصول إلى شرائح أوسع من العملاء.\n\nوتأتي هذه الورشة ضمن البرنامج التدريبي المتكامل الذي تقدمه «حاضنة رائدات»، والهادف إلى بناء قدرات رائدات الأعمال العُمانيات، وتمكينهن من امتلاك المهارات والأدوات اللازمة لإنشاء مشاريع مستدامة وقادرة على المنافسة، بما ينسجم مع مستهدفات رؤية عُمان 2040.",
+        "category": "ورش تدريبية",
+        "tags": [
+          "كانفا",
+          "التصميم الذكي",
+          "المهارات الرقمية",
+          "التسويق الرقمي",
+          "حاضنة رائدات"
+        ],
+        "date": null,
+        "source": {
+          "type": "uploaded_zip",
+          "folder": "news/ورشة التصميم باستخدام كانفا/news.txt"
+        },
+        "images": [
+          {
+            "path": "/images/news/canva-workshop/Wha1tsApp Image 2026-06-18 at 11.37.16 PM.jpeg",
+            "originalZipPath": "news/ورشة التصميم باستخدام كانفا/Wha1tsApp Image 2026-06-18 at 11.37.16 PM.jpeg",
+            "alt": "ورشة التصميم الذكي باستخدام كانفا",
+            "role": "cover"
+          },
+          {
+            "path": "/images/news/canva-workshop/WhatsApp Image 2026-06-18 at 11.37.16 PM.jpeg",
+            "originalZipPath": "news/ورشة التصميم باستخدام كانفا/WhatsApp Image 2026-06-18 at 11.37.16 PM.jpeg",
+            "alt": "تطبيقات عملية خلال ورشة كانفا",
+            "role": "gallery"
+          },
+          {
+            "path": "/images/news/canva-workshop/WhatsApp Image 2026-06-18 at 11.37.16 PM1.jpeg",
+            "originalZipPath": "news/ورشة التصميم باستخدام كانفا/WhatsApp Image 2026-06-18 at 11.37.16 PM1.jpeg",
+            "alt": "مشاركات ورشة التصميم باستخدام كانفا",
+            "role": "gallery"
+          }
+        ]
+      }
+    ],
+    "pressCoverage": [
+      {
+        "id": "alsahwa-unesco-award",
+        "publisher": "صحيفة الصحوة",
+        "title": "حاضنة رائدات.. مشروع عُماني يحصد جائزة التعليم المستدام",
+        "date": "2026-05-12",
+        "url": "https://alsahwa.om/?p=264938",
+        "summary": "تغطية لفوز أكاديمية المرأة العُمانية بجائزة التعليم المستدام في فئة المشروع المتميز عن مشروع حاضنة رائدات.",
+        "category": "تغطية صحفية",
+        "image": {
+          "externalUrl": null,
+          "note": "لم يظهر رابط صورة قابل للاستخدام؛ الرابط المستخرج كان صورة فارغة من قالب الموقع. استخدم صورة خبر اليونسكو المحلية كبديل.",
+          "fallbackPath": "/images/news/unisco/WhatsApp Image 2026-06-18 at 11.53.20 PM.jpeg",
+          "downloadStatus": "not_available_on_page_fallback_kept"
+        }
+      },
+      {
+        "id": "alwaha-unesco-award",
+        "publisher": "مجلة الواحة العمانية",
+        "title": "أكاديمية المرأة العُمانية تفوز بجائزة اليونسكو للتعليم المستدام عن مشروع حاضنة رائدات",
+        "date": "2026-05-12",
+        "url": "https://alwahamagazine.com/archives/38610",
+        "summary": "تغطية موسعة عن فوز الأكاديمية بجائزة التعليم المستدام، مع إبراز أن حاضنة رائدات أول حاضنة نسائية متخصصة في ريادة الأعمال على مستوى الوطن العربي.",
+        "category": "تغطية صحفية",
+        "image": {
+          "externalUrl": "https://alwahamagazine.com/wp-content/uploads/2026/05/22691-695x1024.jpg",
+          "fallbackPath": "/images/news/unisco/WhatsApp Image 2026-06-18 at 11.53.20 PM.jpeg",
+          "alt": "صورة منشورة ضمن تغطية مجلة الواحة العمانية",
+          "downloadedPath": "images/press/alwaha-unesco-award/cover.jpg",
+          "downloadStatus": "downloaded"
+        }
+      },
+      {
+        "id": "halafm-unesco-award",
+        "publisher": "هلا أف أم",
+        "title": "بـحاضنة رائدات.. أكاديمية المرأة العُمانية تحصد جائزة اليونسكو",
+        "date": "2026-05-11",
+        "url": "https://halafm.om/88258/%D8%A8%D9%80%D8%AD%D8%A7%D8%B6%D9%86%D8%A9-%D8%B1%D8%A7%D8%A6%D8%AF%D8%A7%D8%AA-%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9-%D8%A7%D9%84%D8%B9%D9%8F/",
+        "summary": "تغطية إذاعية/إخبارية عن فوز الأكاديمية بجائزة التعليم المستدام، مع وصف المشروع كنموذج رقمي متكامل في التعليم المهني المستدام.",
+        "category": "تغطية إعلامية",
+        "image": {
+          "externalUrl": "https://b2806645.smushcdn.com/2806645/wp-content/uploads/2026/05/12-768x401.png?lossy=2&strip=1&webp=1",
+          "fallbackPath": "/images/news/unisco/WhatsApp Image 2026-06-18 at 11.53.20 PM.jpeg",
+          "alt": "شعار أكاديمية المرأة العمانية المنشور في هلا أف أم",
+          "downloadedPath": "images/press/halafm-unesco-award/cover.png",
+          "downloadStatus": "downloaded"
+        }
+      },
+      {
+        "id": "alroya-launch",
+        "publisher": "جريدة الرؤية العمانية",
+        "title": "أكاديمة المرأة العُمانية تطلق حاضنة رائدات",
+        "date": "2025-05-03",
+        "url": "https://alroya.om/post/364954/أكاديمة-المرأة-الع-مانية-ت-طلق-حاضنة-رائدات",
+        "summary": "تغطية إطلاق مشروع حاضنة رائدات في معرض مسقط الدولي للكتاب 2025 بدعم من بنك نزوى، وذكر استهداف 90 امرأة عُمانية في المرحلة الأولى.",
+        "category": "إطلاق المشروع",
+        "image": {
+          "externalUrl": "https://alroya.om/thumb/w600/uploads/images/2025/05/dEaSU.jpeg",
+          "note": "Direct image was visible in web preview but could not be downloaded by the file downloader; remote URL is kept.",
+          "fallbackPath": "/images/news/unisco/WhatsApp Image 2026-06-18 at 11.53.20 PM.jpeg",
+          "downloadStatus": "download_failed_remote_url_kept"
+        }
+      }
+    ],
+    "socialPosts": [
+      {
+        "id": "instagram-DYNFdnKjMCG",
+        "platform": "instagram",
+        "type": "post",
+        "url": "https://www.instagram.com/p/DYNFdnKjMCG/?igsh=dXN2bGd2dGF1YnZx",
+        "shortcode": "DYNFdnKjMCG",
+        "media": [],
+        "embedUrl": "https://www.instagram.com/p/DYNFdnKjMCG/embed/",
+        "note": "Instagram throttled direct fetch; keep the original URL and use embedUrl or manually download the post image if needed.",
+        "imageDownloadStatus": "blocked_by_instagram_throttling_original_url_kept"
+      },
+      {
+        "id": "instagram-DYNLsIQjU22",
+        "platform": "instagram",
+        "type": "post",
+        "url": "https://www.instagram.com/p/DYNLsIQjU22/?igsh=MWNvdGVsNXN0cWxpbg==",
+        "shortcode": "DYNLsIQjU22",
+        "media": [],
+        "embedUrl": "https://www.instagram.com/p/DYNLsIQjU22/embed/",
+        "note": "Instagram throttled direct fetch; keep the original URL and use embedUrl or manually download the post image if needed.",
+        "imageDownloadStatus": "blocked_by_instagram_throttling_original_url_kept"
+      },
+      {
+        "id": "instagram-DYOwoiPjdFH",
+        "platform": "instagram",
+        "type": "post",
+        "url": "https://www.instagram.com/p/DYOwoiPjdFH/?igsh=dThuM2Zsa3l0dmx5",
+        "shortcode": "DYOwoiPjdFH",
+        "media": [],
+        "embedUrl": "https://www.instagram.com/p/DYOwoiPjdFH/embed/",
+        "note": "Instagram throttled direct fetch; keep the original URL and use embedUrl or manually download the post image if needed.",
+        "imageDownloadStatus": "blocked_by_instagram_throttling_original_url_kept"
+      },
+      {
+        "id": "instagram-DZUvWn5sJM8",
+        "platform": "instagram",
+        "type": "reel",
+        "url": "https://www.instagram.com/reel/DZUvWn5sJM8/?igsh=MWNlb3ZsZnZzeXI0",
+        "shortcode": "DZUvWn5sJM8",
+        "media": [],
+        "embedUrl": "https://www.instagram.com/reel/DZUvWn5sJM8/embed/",
+        "note": "Instagram throttled direct fetch; keep the original URL and use embedUrl or manually download the reel cover/video if needed.",
+        "imageDownloadStatus": "blocked_by_instagram_throttling_original_url_kept"
+      }
+    ]
+  }
+}
