@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import Social from '@/components/Social';
 import TransitionLink from '@/components/TransitionLink';
@@ -47,7 +48,14 @@ export default function NewsPage() {
         <h2 className="subhead" data-reveal>تغطية صحفية</h2>
         <div className="press-grid" data-reveal-group>
           {press.map((p) => (
-            <a key={p.pub} className="press" href={p.url} target="_blank" rel="noopener">
+            <a
+              key={p.pub}
+              className="press"
+              href={p.url}
+              target="_blank"
+              rel="noopener"
+              style={{ '--press-logo': `url('${p.logo}')` } as CSSProperties}
+            >
               <span className="press__pub">{p.pub}</span>
               <p>{p.text}</p>
               <span className="press__link">قراءة المقال ↗</span>

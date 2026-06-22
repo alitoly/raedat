@@ -66,10 +66,10 @@ export const news = [
 ];
 
 export const press = [
-  { pub: 'مجلة الواحة العُمانية', text: 'أكاديمية المرأة تفوز بجائزة اليونسكو للتعليم المستدام عن مشروع حاضنة رائدات.', url: 'https://alwahamagazine.com/archives/38610' },
-  { pub: 'هلا أف أم', text: 'بـحاضنة رائدات.. أكاديمية المرأة العُمانية تحصد جائزة اليونسكو.', url: 'https://halafm.om/88258/' },
-  { pub: 'صحيفة الصحوة', text: 'حاضنة رائدات.. مشروع عُماني يحصد جائزة التعليم المستدام.', url: 'https://alsahwa.om/?p=264938' },
-  { pub: 'جريدة الرؤية', text: 'أكاديمية المرأة العُمانية تطلق حاضنة رائدات في معرض مسقط للكتاب 2025.', url: 'https://alroya.om/post/364954' },
+  { pub: 'مجلة الواحة العُمانية', text: 'أكاديمية المرأة تفوز بجائزة اليونسكو للتعليم المستدام عن مشروع حاضنة رائدات.', url: 'https://alwahamagazine.com/archives/38610', logo: '/images/press/alwaha-logo.webp' },
+  { pub: 'هلا أف أم', text: 'بـحاضنة رائدات.. أكاديمية المرأة العُمانية تحصد جائزة اليونسكو.', url: 'https://halafm.om/88258/', logo: '/images/press/halafm-logo.webp' },
+  { pub: 'صحيفة الصحوة', text: 'حاضنة رائدات.. مشروع عُماني يحصد جائزة التعليم المستدام.', url: 'https://alsahwa.om/?p=264938', logo: '/images/press/alsahwa-logo.ico' },
+  { pub: 'جريدة الرؤية', text: 'أكاديمية المرأة العُمانية تطلق حاضنة رائدات في معرض مسقط للكتاب 2025.', url: 'https://alroya.om/post/364954', logo: '/images/press/alroya-logo.png' },
 ];
 
 export const social = [

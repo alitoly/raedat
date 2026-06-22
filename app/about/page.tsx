@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ProfileCard from '@/components/ProfileCard';
 
 export const metadata: Metadata = {
   title: 'عن الحاضنة',
@@ -39,10 +40,21 @@ export default function AboutPage() {
       </section>
 
       <section className="section closing">
-        <div className="closing__card" data-reveal>
+        <div className="closing__profile" data-reveal>
           <span className="kicker">إشراف واعتماد</span>
-          <h2 className="display">د. فاطمة يوسف حمدان البلوشية</h2>
-          <p className="closing__role">الرئيس التنفيذي لأكاديمية المرأة العُمانية</p>
+          <ProfileCard
+            className="closing__profile-card"
+            name="د. فاطمة يوسف حمدان البلوشية"
+            title="الرئيس التنفيذي لأكاديمية المرأة العُمانية"
+            avatarUrl="/images/site/dr-fatma.jpg"
+            iconUrl="/images/site/sparkle-pattern.svg"
+            showUserInfo={false}
+            enableTilt
+            enableMobileTilt={false}
+            behindGlowEnabled
+            behindGlowColor="rgba(149, 204, 221, 0.6)"
+            innerGradient="linear-gradient(145deg, rgba(41,54,129,0.62) 0%, rgba(149,204,221,0.28) 100%)"
+          />
           <p className="closing__quote">«حيث تتحوّل الأفكار إلى مشاريع حقيقية، وتُصنع قادة المستقبل من النساء الرائدات.»</p>
         </div>
       </section>
