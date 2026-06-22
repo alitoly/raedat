@@ -1,0 +1,43 @@
+.card-swap-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(5%, 20%);
+  transform-origin: bottom right;
+
+  perspective: 900px;
+  overflow: visible;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  /* brand-themed glass card instead of the default solid black */
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(155deg, #2f3f8e 0%, #1c2a63 100%);
+  box-shadow: 0 30px 60px -28px rgba(20, 26, 58, 0.7);
+
+  transform-style: preserve-3d;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  cursor: pointer;
+}
+
+/* single-column layout: centre the stack instead of right-anchoring it */
+@media (max-width: 860px) {
+  .card-swap-container {
+    left: 50%;
+    right: auto;
+    transform-origin: center bottom;
+    transform: translateX(-50%) scale(0.82);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-swap-container {
+    transform: translateX(-50%) scale(0.62);
+  }
+}

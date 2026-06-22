@@ -101,7 +101,8 @@ img { display: block; max-width: 100%; }
 .nav--solid .nav__links a::after { background: var(--pink-deep); }
 /* hamburger — only shown on mobile */
 .nav__burger { display: none; }
-.nav__menu-cta { display: none; }
+/* hidden on desktop — .nav prefix keeps it from losing to .btn's display rule */
+.nav .nav__menu-cta { display: none; }
 .nav__burger {
   width: 42px; height: 42px; border: none; background: none; cursor: pointer; padding: 9px;
   flex-direction: column; justify-content: center; gap: 5px; color: currentColor;
@@ -277,6 +278,41 @@ img { display: block; max-width: 100%; }
 .leaf__num { font-family: var(--font-milan); font-size: 1.5rem; color: rgba(255,255,255,.7); }
 .leaf h3 { font-size: 1.18rem; margin: 6px 0 8px; color: #fff; }
 .leaf p { color: rgba(255,255,255,.82); font-size: .92rem; }
+
+/* ===== name-meaning showcase (CardSwap) ===== */
+.name-showcase {
+  display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 24px;
+  min-height: 520px; padding-bottom: 150px;
+}
+.name-showcase__intro { max-width: 30ch; }
+.name-showcase__title {
+  font-family: var(--font-milan); font-size: clamp(2rem, 4.4vw, 3.1rem);
+  color: var(--blue-deep); margin: 14px 0 18px; line-height: 1.1;
+}
+.name-showcase__lead { color: var(--ink-soft); font-size: 1.12rem; font-weight: 500; }
+.name-showcase__hint { margin-top: 16px; color: var(--pink-deep); font-weight: 700; font-size: .95rem; }
+/* anchor box for the absolutely-positioned swap stack */
+.name-showcase__stack { position: relative; height: 420px; }
+
+.meaning-card {
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 8px;
+  padding: 26px; color: #fff; overflow: hidden;
+}
+.meaning-card__num { font-family: var(--font-milan); font-size: 1.6rem; color: rgba(255,255,255,.62); }
+.meaning-card h3 { font-size: 1.35rem; margin: 0; color: #fff; }
+.meaning-card p { color: rgba(255,255,255,.85); font-size: .98rem; line-height: 1.55; margin: 0; }
+/* vary the gradient per card so the stack reads as distinct layers */
+.meaning-card:nth-child(5n+1) { background: linear-gradient(155deg, #62b4cf, #2f56c4); }
+.meaning-card:nth-child(5n+2) { background: linear-gradient(155deg, #84d4d2, #46a0c6); }
+.meaning-card:nth-child(5n+3) { background: linear-gradient(155deg, #5b8fe6, #2f3f8e); }
+.meaning-card:nth-child(5n+4) { background: linear-gradient(155deg, #74cbc2, #3a8fa8); }
+.meaning-card:nth-child(5n+5) { background: linear-gradient(155deg, #5fa3e2, #293681); }
+
+@media (max-width: 860px) {
+  .name-showcase { grid-template-columns: 1fr; min-height: auto; padding-bottom: 120px; gap: 10px; }
+  .name-showcase__intro { max-width: none; text-align: center; margin: 0 auto; }
+  .name-showcase__stack { height: 360px; }
+}
 
 /* ===== goal cards (creative shaped cards on generated blue-mesh imagery) ===== */
 .goal-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -583,7 +619,7 @@ img { display: block; max-width: 100%; }
   }
   .nav__links a:not(.nav__menu-cta)::after { display: none; }
   .nav__links a.is-active:not(.nav__menu-cta) { color: var(--blue-deep); background: var(--bg-2); }
-  .nav__menu-cta { display: inline-flex; justify-content: center; margin-top: 8px; }
+  .nav .nav__menu-cta { display: inline-flex; justify-content: center; margin-top: 8px; }
   .split { grid-template-columns: 1fr; }
   .goal-grid, .impact-grid { grid-template-columns: 1fr 1fr; }
   .goal-card--span2, .formula { grid-column: span 2; }

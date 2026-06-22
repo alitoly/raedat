@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ProfileCard from '@/components/ProfileCard';
+import CardSwap, { Card } from '@/components/CardSwap';
 
 export const metadata: Metadata = {
   title: 'عن الحاضنة',
@@ -27,15 +28,33 @@ export default function AboutPage() {
         </p>
       </header>
 
-      <section className="section">
-        <div className="leaf-grid" data-reveal-group>
-          {nameMeanings.map((m) => (
-            <article key={m.num} className="leaf">
-              <span className="leaf__num">{m.num}</span>
-              <h3>{m.t}</h3>
-              <p>{m.d}</p>
-            </article>
-          ))}
+      <section className="section name-showcase">
+        <div className="name-showcase__intro" data-reveal>
+          <span className="kicker">دلالات الاسم</span>
+          <h2 className="name-showcase__title">لماذا «رائدات»؟</h2>
+          <p className="name-showcase__lead">
+            خمس دلالات تختصر روح الحاضنة ورسالتها — اسمٌ يُلهم، ويعكس الريادة، ويعزّز الهوية النسائية.
+          </p>
+          <p className="name-showcase__hint">اضغطي على البطاقة لتصفّح الدلالات ↔</p>
+        </div>
+        <div className="name-showcase__stack">
+          <CardSwap
+            width={300}
+            height={330}
+            cardDistance={46}
+            verticalDistance={52}
+            skewAmount={5}
+            easing="elastic"
+            autoPlay={false}
+          >
+            {nameMeanings.map((m) => (
+              <Card key={m.num} className="meaning-card">
+                <span className="meaning-card__num">{m.num}</span>
+                <h3>{m.t}</h3>
+                <p>{m.d}</p>
+              </Card>
+            ))}
+          </CardSwap>
         </div>
       </section>
 
