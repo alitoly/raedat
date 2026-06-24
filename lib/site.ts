@@ -1,6 +1,6 @@
 // Central site config for SEO. Override the URL per environment via
 // NEXT_PUBLIC_SITE_URL (set it to your real production domain in Vercel).
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://raedat-incubator.vercel.app').replace(/\/$/, '');
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.raaidatincubator.om').replace(/\/$/, '');
 
 export const siteName = 'حاضنة رائدات';
 
