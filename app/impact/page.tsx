@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Impact from '@/components/Impact';
 import PageHero from '@/components/PageHero';
+import { breadcrumbSchema } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'قياس الأثر والاستدامة',
@@ -9,9 +10,15 @@ export const metadata: Metadata = {
   alternates: { canonical: '/impact' },
 };
 
+const breadcrumb = breadcrumbSchema([
+  { name: 'الرئيسية', url: '/' },
+  { name: 'قياس الأثر', url: '/impact' },
+]);
+
 export default function ImpactPage() {
   return (
     <main className="page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <PageHero
         src="/images/site/photo-1.webp"
         alt="مشاركات في فعاليات حاضنة رائدات"

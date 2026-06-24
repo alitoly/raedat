@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import TransitionLink from '@/components/TransitionLink';
 import Gallery from '@/components/Gallery';
 import { news } from '@/lib/data';
+import { siteUrl, siteName, breadcrumbSchema } from '@/lib/site';
 
 export function generateStaticParams() {
   return news.map((n) => ({ slug: n.slug }));
@@ -33,8 +34,32 @@ export default async function NewsDetail({ params }: { params: Promise<{ slug: s
   const item = news.find((n) => n.slug === slug);
   if (!item) notFound();
 
+  const breadcrumb = breadcrumbSchema([
+    { name: 'الرئيسية', url: '/' },
+    { name: 'الأخبار', url: '/news' },
+    { name: item.title, url: `/news/${item.slug}` },
+  ]);
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: item.title,
+    description: item.summary,
+    image: `${siteUrl}${item.img}`,
+    url: `${siteUrl}/news/${item.slug}`,
+    inLanguage: 'ar',
+    publisher: {
+      '@type': 'EducationalOrganization',
+      name: siteName,
+      logo: { '@type': 'ImageObject', url: `${siteUrl}/icon.png` },
+    },
+    articleBody: item.body.join(' '),
+  };
+
   return (
     <main className="page article">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <header className="article__head" data-reveal>
         <TransitionLink href="/news" className="article__back">→ كل الأخبار</TransitionLink>
         <span className="kicker">{item.tag}</span>

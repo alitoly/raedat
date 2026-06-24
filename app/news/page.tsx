@@ -5,6 +5,7 @@ import Social from '@/components/Social';
 import TransitionLink from '@/components/TransitionLink';
 import PageHero from '@/components/PageHero';
 import { news, press } from '@/lib/data';
+import { breadcrumbSchema } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'الأخبار والإنجازات',
@@ -13,9 +14,15 @@ export const metadata: Metadata = {
   alternates: { canonical: '/news' },
 };
 
+const breadcrumb = breadcrumbSchema([
+  { name: 'الرئيسية', url: '/' },
+  { name: 'الأخبار والإنجازات', url: '/news' },
+]);
+
 export default function NewsPage() {
   return (
     <main className="page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <PageHero
         src="/images/site/photo-4.webp"
         alt="ورشة عمل ضمن فعاليات حاضنة رائدات"

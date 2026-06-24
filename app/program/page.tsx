@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Program from '@/components/Program';
 import PageHero from '@/components/PageHero';
 import { phases } from '@/lib/data';
+import { breadcrumbSchema } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'البرنامج المتكامل في ريادة الأعمال',
@@ -10,9 +11,15 @@ export const metadata: Metadata = {
   alternates: { canonical: '/program' },
 };
 
+const breadcrumb = breadcrumbSchema([
+  { name: 'الرئيسية', url: '/' },
+  { name: 'البرنامج المتكامل', url: '/program' },
+]);
+
 export default function ProgramPage() {
   return (
     <main className="page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <PageHero
         src="/images/site/photo-3.webp"
         alt="جلسة تدريبية ضمن برنامج حاضنة رائدات"

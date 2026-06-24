@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import ProfileCard from '@/components/ProfileCard';
 import CardSwap, { Card } from '@/components/CardSwap';
 import PageHero from '@/components/PageHero';
+import { breadcrumbSchema } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'عن الحاضنة',
@@ -18,9 +19,15 @@ const nameMeanings = [
   { num: '٠٥', t: 'سهل التذكّر وجذّاب', d: 'اسمٌ يبقى في الذاكرة ويُلهم من يسمعه.' },
 ];
 
+const breadcrumb = breadcrumbSchema([
+  { name: 'الرئيسية', url: '/' },
+  { name: 'عن الحاضنة', url: '/about' },
+]);
+
 export default function AboutPage() {
   return (
     <main className="page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <PageHero
         src="/images/site/photo-2.webp"
         alt="فريق حاضنة رائدات بأكاديمية المرأة العُمانية"

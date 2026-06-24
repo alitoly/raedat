@@ -1,6 +1,16 @@
+import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import Goals from '@/components/Goals';
 import TransitionLink from '@/components/TransitionLink';
+import { siteKeywords } from '@/lib/site';
+
+export const metadata: Metadata = {
+  title: 'حاضنة رائدات — أول حاضنة نسائية في ريادة الأعمال بالوطن العربي',
+  description:
+    'حاضنة رائدات: أول حاضنة نسائية متخصصة في ريادة الأعمال على مستوى الوطن العربي، تابعة لأكاديمية المرأة العُمانية. تدعم 90 امرأة عُمانية بالتدريب والإرشاد والتمويل لتحويل الأفكار إلى مشاريع مستدامة وفق رؤية عُمان 2040.',
+  keywords: siteKeywords,
+  alternates: { canonical: '/' },
+};
 
 export default function Page() {
   return (

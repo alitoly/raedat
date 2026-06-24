@@ -33,7 +33,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'أكاديمية المرأة العُمانية' }],
   creator: 'أكاديمية المرأة العُمانية',
   publisher: 'أكاديمية المرأة العُمانية',
-  alternates: { canonical: '/' },
+  alternates: {
+    canonical: '/',
+    languages: { ar: siteUrl },
+  },
   openGraph: {
     type: 'website',
     locale: 'ar_OM',
@@ -61,13 +64,29 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
     name: 'حاضنة رائدات',
-    alternateName: ['Raedat', 'حاضنة رائدات للأعمال', 'Raedat Incubator'],
+    alternateName: ['Raedat', 'حاضنة رائدات للأعمال', 'Raedat Incubator', 'Raedat Business Incubator'],
     url: siteUrl,
-    logo: `${siteUrl}/icon.png`,
+    logo: { '@type': 'ImageObject', url: `${siteUrl}/icon.png` },
     image: `${siteUrl}/og.png`,
     description: siteDescription,
     inLanguage: 'ar',
-    areaServed: 'OM',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'OM',
+      addressLocality: 'مسقط',
+      addressRegion: 'محافظة مسقط',
+    },
+    areaServed: { '@type': 'Country', name: 'Oman', sameAs: 'https://www.wikidata.org/wiki/Q842' },
+    award: 'جائزة اليونسكو للتعليم المستدام — فئة المشروع المتميز 2026',
+    foundingDate: '2024',
+    knowsAbout: [
+      'ريادة الأعمال النسائية',
+      'تمكين المرأة الاقتصادي',
+      'حاضنات الأعمال',
+      'رؤية عُمان 2040',
+      'المشاريع الصغيرة والمتوسطة',
+      'الابتكار والتقنية',
+    ],
     parentOrganization: { '@type': 'EducationalOrganization', name: 'أكاديمية المرأة العُمانية' },
   },
   {
@@ -76,6 +95,7 @@ const jsonLd = [
     name: 'حاضنة رائدات',
     url: siteUrl,
     inLanguage: 'ar',
+    description: siteDescription,
   },
 ];
 
