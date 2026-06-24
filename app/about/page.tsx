@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import ProfileCard from '@/components/ProfileCard';
 import CardSwap, { Card } from '@/components/CardSwap';
+import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
   title: 'عن الحاضنة',
@@ -20,13 +21,13 @@ const nameMeanings = [
 export default function AboutPage() {
   return (
     <main className="page">
-      <header className="page-head" data-reveal>
-        <span className="kicker">عن الحاضنة</span>
-        <h1 className="display page-head__title">اسمٌ يحمل دلالة</h1>
-        <p className="page-head__intro">
-          يُعلن مركز الاستدامة لتطوير الأعمال، التابع لأكاديمية المرأة العُمانية، عن «حاضنة رائدات» — فضاءٌ ملهم تنمو فيه الأفكار بالإلهام المتبادل، وتُصنع فيه قادة المستقبل من النساء الرائدات. أول حاضنة نسائية متخصصة في دعم ريادة الأعمال على مستوى الوطن العربي.
-        </p>
-      </header>
+      <PageHero
+        src="/images/site/photo-2.webp"
+        alt="فريق حاضنة رائدات بأكاديمية المرأة العُمانية"
+        kicker="عن الحاضنة"
+        title="اسمٌ يحمل دلالة"
+        intro="يُعلن مركز الاستدامة لتطوير الأعمال، التابع لأكاديمية المرأة العُمانية، عن «حاضنة رائدات» — فضاءٌ ملهم تنمو فيه الأفكار بالإلهام المتبادل، وتُصنع فيه قادة المستقبل من النساء الرائدات. أول حاضنة نسائية متخصصة في دعم ريادة الأعمال على مستوى الوطن العربي."
+      />
 
       <section className="section name-showcase">
         <div className="name-showcase__intro" data-reveal>

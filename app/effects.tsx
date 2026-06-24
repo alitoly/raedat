@@ -34,9 +34,10 @@ export default function Effects() {
     const onScroll = () => {
       const h = document.documentElement.scrollHeight - window.innerHeight;
       if (line) line.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
-      // only the home hero drives the transparent->solid nav
-      if (nav && document.querySelector('.hero')) {
-        nav.classList.toggle('nav--solid', window.scrollY > window.innerHeight * 0.7);
+      // a full-screen hero (home or inner page) drives the transparent->solid nav
+      const heroEl = document.querySelector('.hero, .page-hero');
+      if (nav && heroEl) {
+        nav.classList.toggle('nav--solid', window.scrollY > heroEl.getBoundingClientRect().height * 0.7);
       }
     };
     lenis ? lenis.on('scroll', onScroll) : window.addEventListener('scroll', onScroll, { passive: true });
@@ -54,6 +55,10 @@ export default function Effects() {
   // per navigation: reset scroll, (re)wire reveal + count-up for the new page
   useEffect(() => {
     lenisRef.current?.scrollTo(0, { immediate: true });
+
+    // reset nav transparency for the new page: transparent at the top of a hero page, solid otherwise
+    const nav = document.getElementById('nav');
+    if (nav) nav.classList.toggle('nav--solid', !document.querySelector('.hero, .page-hero'));
 
     const io = new IntersectionObserver((entries) => {
       entries.forEach((en) => {

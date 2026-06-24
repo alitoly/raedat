@@ -644,6 +644,54 @@ img { display: block; max-width: 100%; }
 .page-head__title { font-size: clamp(2.4rem, 6vw, 4.2rem); color: var(--ink); margin: 10px 0 18px; }
 .page-head__intro { max-width: 64ch; margin: 0 auto; color: var(--ink-soft); font-size: 1.12rem; font-weight: 500; }
 
+/* ===== inner-page full-screen hero — classic monochrome + film grain ===== */
+.page-hero {
+  position: relative; width: 100%; min-height: 100svh;
+  margin-top: -84px;                 /* slide up so the image fills behind the fixed nav */
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; isolation: isolate;
+}
+/* light black & white with a faint warm "sand" cast */
+.page-hero__img {
+  object-fit: cover; z-index: -3;
+  filter: grayscale(1) brightness(1.04) contrast(1.05) sepia(0.16) saturate(1.1);
+}
+/* dark sand scrim so the overlaid text stays legible */
+.page-hero__scrim {
+  position: absolute; inset: 0; z-index: -2;
+  background:
+    linear-gradient(to top, rgba(26, 22, 16, 0.92) 0%, rgba(26, 22, 16, 0.42) 48%, rgba(26, 22, 16, 0.6) 100%),
+    radial-gradient(120% 90% at 50% 120%, rgba(40, 33, 25, 0.5), transparent 62%);
+}
+/* repeating film grain */
+.page-hero::after {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-image: url('/images/site/grain.svg');
+  background-size: 160px 160px; background-repeat: repeat;
+  mix-blend-mode: overlay; opacity: 0.5;
+}
+.page-hero__inner {
+  position: relative; z-index: 1; max-width: var(--max); width: 100%;
+  margin: 0 auto; padding: 120px 32px; text-align: center; color: #fff;
+}
+.page-hero__kicker {
+  display: inline-block; font-weight: 800; font-size: .82rem; letter-spacing: .16em;
+  text-transform: uppercase; color: #fff; padding: 8px 16px; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+.page-hero__title {
+  font-size: clamp(2.6rem, 8vw, 5.6rem); margin: 22px auto 18px; line-height: .98; color: #fff;
+  text-shadow: 0 24px 70px rgba(20, 16, 10, 0.55);
+}
+.page-hero__intro {
+  max-width: 60ch; margin: 0 auto; font-size: clamp(1.05rem, 2vw, 1.32rem); font-weight: 500;
+  color: rgba(255, 255, 255, 0.92); text-shadow: 0 4px 24px rgba(20, 16, 10, 0.5);
+}
+@media (max-width: 760px) {
+  .page-hero__inner { padding: 100px 22px; }
+}
+
 /* ===== program: connected node roadmap ===== */
 .journey { position: relative; max-width: 760px; margin: 0 auto; padding: 6px 0; }
 .journey__spine {

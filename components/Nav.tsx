@@ -12,15 +12,18 @@ const links = [
   { href: '/news', label: 'الأخبار' },
 ];
 
+// pages whose hero fills the screen behind the nav — start transparent here
+const HERO_PATHS = ['/', '/about', '/program', '/impact', '/news'];
+
 export default function Nav() {
   const pathname = usePathname();
-  const onHome = pathname === '/';
+  const overHero = HERO_PATHS.includes(pathname);
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
 
   return (
     <header
-      className={`nav${onHome ? '' : ' nav--solid nav--page'}${open ? ' nav--open' : ''}`}
+      className={`nav${overHero ? '' : ' nav--solid nav--page'}${open ? ' nav--open' : ''}`}
       id="nav"
     >
       <TransitionLink className="brand" href="/" onClick={close}>

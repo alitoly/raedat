@@ -3,6 +3,7 @@ import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import Social from '@/components/Social';
 import TransitionLink from '@/components/TransitionLink';
+import PageHero from '@/components/PageHero';
 import { news, press } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -15,13 +16,13 @@ export const metadata: Metadata = {
 export default function NewsPage() {
   return (
     <main className="page">
-      <header className="page-head" data-reveal>
-        <span className="kicker">آخر الأخبار</span>
-        <h1 className="display page-head__title">إنجازاتٌ تُروى</h1>
-        <p className="page-head__intro">
-          من جائزة اليونسكو للتعليم المستدام إلى ورش التمكين الرقمي وحفلات التكريم — محطات من مسيرة حاضنة رائدات.
-        </p>
-      </header>
+      <PageHero
+        src="/images/site/photo-4.webp"
+        alt="ورشة عمل ضمن فعاليات حاضنة رائدات"
+        kicker="آخر الأخبار"
+        title="إنجازاتٌ تُروى"
+        intro="من جائزة اليونسكو للتعليم المستدام إلى ورش التمكين الرقمي وحفلات التكريم — محطات من مسيرة حاضنة رائدات."
+      />
 
       <section className="section">
         <div className="news-grid" data-reveal-group>

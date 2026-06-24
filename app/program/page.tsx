@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Program from '@/components/Program';
+import PageHero from '@/components/PageHero';
 import { phases } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -12,13 +13,14 @@ export const metadata: Metadata = {
 export default function ProgramPage() {
   return (
     <main className="page">
-      <header className="page-head" data-reveal>
-        <span className="kicker">البرنامج المتكامل</span>
-        <h1 className="display page-head__title">البرنامج المتكامل في ريادة الأعمال</h1>
-        <p className="page-head__intro">
-          عشر محطات متّصلة تأخذ الرائدة من أول فكرة إلى مشروع مستدام، يتخللها تأهيل عملي واحتضان لتسعين امرأة عُمانية.
-        </p>
-      </header>
+      <PageHero
+        src="/images/site/photo-3.webp"
+        alt="جلسة تدريبية ضمن برنامج حاضنة رائدات"
+        position="center 35%"
+        kicker="البرنامج المتكامل"
+        title="البرنامج المتكامل في ريادة الأعمال"
+        intro="عشر محطات متّصلة تأخذ الرائدة من أول فكرة إلى مشروع مستدام، يتخللها تأهيل عملي واحتضان لتسعين امرأة عُمانية."
+      />
 
       <Program />
 
