@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Tajawal } from 'next/font/google';
 import localFont from 'next/font/local';
@@ -6,7 +7,9 @@ import Effects from './effects';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import PageTransition from '@/components/PageTransition';
-import { siteUrl, siteName, siteDescription, siteKeywords } from '@/lib/site';
+import { siteName, siteDescription, siteKeywords } from '@/lib/site';
+
+const siteUrl = 'https://raaidatincubator.om';
 
 const tajawal = Tajawal({
   subsets: ['arabic'],
@@ -55,7 +58,12 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -76,7 +84,11 @@ const jsonLd = [
       addressLocality: 'مسقط',
       addressRegion: 'محافظة مسقط',
     },
-    areaServed: { '@type': 'Country', name: 'Oman', sameAs: 'https://www.wikidata.org/wiki/Q842' },
+    areaServed: {
+      '@type': 'Country',
+      name: 'Oman',
+      sameAs: 'https://www.wikidata.org/wiki/Q842',
+    },
     award: 'جائزة اليونسكو للتعليم المستدام — فئة المشروع المتميز 2026',
     foundingDate: '2024',
     knowsAbout: [
@@ -87,7 +99,10 @@ const jsonLd = [
       'المشاريع الصغيرة والمتوسطة',
       'الابتكار والتقنية',
     ],
-    parentOrganization: { '@type': 'EducationalOrganization', name: 'أكاديمية المرأة العُمانية' },
+    parentOrganization: {
+      '@type': 'EducationalOrganization',
+      name: 'أكاديمية المرأة العُمانية',
+    },
   },
   {
     '@context': 'https://schema.org',
@@ -103,7 +118,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ar" dir="rtl" className={`${tajawal.variable} ${milan.variable}`}>
       <body>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="scroll-line" id="scrollLine" />
         <PageTransition>
           <Nav />
@@ -115,3 +133,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
