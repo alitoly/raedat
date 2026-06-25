@@ -40,7 +40,7 @@ export default function NewsPage() {
               className={`ncard ncard--${n.tone}${n.feature ? ' ncard--feature' : ''}`}
             >
               <Image src={n.img} alt={n.title} fill sizes="(max-width: 560px) 100vw, 66vw" className="ncard__bg" />
-              <Image src={`/images/mesh/mesh-${n.mesh}.png`} alt="" fill sizes="66vw" className="ncard__mesh" />
+              <Image src={`/images/mesh/mesh-${n.mesh}.webp`} alt="" fill sizes="66vw" className="ncard__mesh" />
               <span className="ncard__tone" />
               <span className="ncard__scrim" />
               <span className="ncard__tag">{n.tag}</span>

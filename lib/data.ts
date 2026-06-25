@@ -1,12 +1,12 @@
 export const goals = [
-  { idx: '01', title: 'تعزيز الابتكار والإبداع', desc: 'تشجيع الأفكار المبتكرة في القطاعات الاقتصادية والتقنية وقطاع الذكاء الاصطناعي.', icon: 'spark', img: '/images/goals/g1-spark.png', span: 2 },
-  { idx: '02', title: 'دعم ريادة الأعمال النسائية', desc: 'تحويل الأفكار الإبداعية إلى مشاريع تجارية ناجحة ومستدامة.', icon: 'women', img: '/images/goals/g2-women.png', span: 1 },
-  { idx: '03', title: 'تحقيق رؤية عُمان 2040', desc: 'بناء قدرات النساء وتعزيز مشاركتهن في الاقتصاد الوطني.', icon: 'vision', img: '/images/goals/g3-vision.png', span: 1 },
-  { idx: '04', title: 'الإرشاد والتوجيه', desc: 'دعم استشاري وتوجيهي من خبراء ورواد أعمال لتحقيق النمو المهني.', icon: 'compass', img: '/images/goals/g4-compass.png', span: 1 },
-  { idx: '05', title: 'تطوير المهارات وبناء القدرات', desc: 'برامج تدريبية متخصصة لتعزيز المهارات الإدارية والفنية لإدارة المشاريع.', icon: 'skills', img: '/images/goals/g5-skills.png', span: 2 },
-  { idx: '06', title: 'تسهيل الوصول للتمويل', desc: 'الوصول إلى مصادر التمويل والشراكات الاستثمارية.', icon: 'fund', img: '/images/goals/g6-fund.png', span: 1 },
-  { idx: '07', title: 'بناء شبكة علاقات مهنية', desc: 'التواصل مع مجتمع ريادة الأعمال والمستثمرين والشركاء الاستراتيجيين.', icon: 'network', img: '/images/mesh/mesh-2.png', span: 1 },
-  { idx: '08', title: 'المساهمة في التنمية الاقتصادية', desc: 'دعم نمو المشاريع الصغيرة والمتوسطة لزيادة مساهمة المرأة في الاقتصاد المحلي.', icon: 'growth', img: '/images/goals/g8-growth.png', span: 2 },
+  { idx: '01', title: 'تعزيز الابتكار والإبداع', desc: 'تشجيع الأفكار المبتكرة في القطاعات الاقتصادية والتقنية وقطاع الذكاء الاصطناعي.', icon: 'spark', img: '/images/mesh/mesh-1.webp', span: 2 },
+  { idx: '02', title: 'دعم ريادة الأعمال النسائية', desc: 'تحويل الأفكار الإبداعية إلى مشاريع تجارية ناجحة ومستدامة.', icon: 'women', img: '/images/mesh/mesh-2.webp', span: 1 },
+  { idx: '03', title: 'تحقيق رؤية عُمان 2040', desc: 'بناء قدرات النساء وتعزيز مشاركتهن في الاقتصاد الوطني.', icon: 'vision', img: '/images/mesh/mesh-3.webp', span: 1 },
+  { idx: '04', title: 'الإرشاد والتوجيه', desc: 'دعم استشاري وتوجيهي من خبراء ورواد أعمال لتحقيق النمو المهني.', icon: 'compass', img: '/images/mesh/mesh-4.webp', span: 1 },
+  { idx: '05', title: 'تطوير المهارات وبناء القدرات', desc: 'برامج تدريبية متخصصة لتعزيز المهارات الإدارية والفنية لإدارة المشاريع.', icon: 'skills', img: '/images/mesh/mesh-3.webp', span: 2 },
+  { idx: '06', title: 'تسهيل الوصول للتمويل', desc: 'الوصول إلى مصادر التمويل والشراكات الاستثمارية.', icon: 'fund', img: '/images/mesh/mesh-1.webp', span: 1 },
+  { idx: '07', title: 'بناء شبكة علاقات مهنية', desc: 'التواصل مع مجتمع ريادة الأعمال والمستثمرين والشركاء الاستراتيجيين.', icon: 'network', img: '/images/mesh/mesh-4.webp', span: 1 },
+  { idx: '08', title: 'المساهمة في التنمية الاقتصادية', desc: 'دعم نمو المشاريع الصغيرة والمتوسطة لزيادة مساهمة المرأة في الاقتصاد المحلي.', icon: 'growth', img: '/images/mesh/mesh-2.webp', span: 2 },
 ];
 
 export const packages = [

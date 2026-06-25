@@ -15,7 +15,7 @@ export default function Hero() {
       />
       {/* blue mesh recolor layer */}
       <Image
-        src="/images/mesh/mesh-2.png"
+        src="/images/mesh/mesh-2.webp"
         alt=""
         fill
         sizes="100vw"
@@ -31,10 +31,16 @@ export default function Hero() {
           <TransitionLink href="/program" className="btn btn--pink">انضمي إلينا</TransitionLink>
           <TransitionLink href="/about" className="btn btn--glassdark">لماذا رائدات؟</TransitionLink>
         </div>
-        <div className="hero__chips">
-          <span className="chip"><b>+90</b> امرأة عُمانية</span>
-          <span className="chip"><b>10</b> باقات تدريبية</span>
-          <span className="chip"><b>2040</b> رؤية عُمان</span>
+        <div className="hero__highlights">
+          <span className="hero__first">
+            <b>الأولى عربياً</b>
+            <span>أول حاضنة نسائية على مستوى الوطن العربي</span>
+          </span>
+          <div className="hero__stats">
+            <div className="hstat"><b>+423</b><span>شريكاً وخبيراً</span></div>
+            <div className="hstat"><b>+90</b><span>رائدة عُمانية</span></div>
+            <div className="hstat"><b>2040</b><span>رؤية عُمان</span></div>
+          </div>
         </div>
       </div>
 

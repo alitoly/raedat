@@ -9,6 +9,8 @@ const links = [
   { href: '/about', label: 'عن الحاضنة' },
   { href: '/program', label: 'البرنامج' },
   { href: '/impact', label: 'الأثر' },
+  { href: '/stories', label: 'الرائدات' },
+  { href: '/gallery', label: 'المعرض' },
   { href: '/news', label: 'الأخبار' },
 ];
 

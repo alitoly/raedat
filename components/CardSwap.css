@@ -16,8 +16,8 @@
   border-radius: 20px;
   /* brand-themed glass card instead of the default solid black */
   border: 1px solid rgba(255, 255, 255, 0.22);
-  background: linear-gradient(155deg, #2f3f8e 0%, #1c2a63 100%);
-  box-shadow: 0 30px 60px -28px rgba(20, 26, 58, 0.7);
+  background: linear-gradient(155deg, #3a4d72 0%, #263650 100%);
+  box-shadow: 0 30px 60px -28px rgba(30, 40, 68, 0.7);
 
   transform-style: preserve-3d;
   will-change: transform;

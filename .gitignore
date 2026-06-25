@@ -12,6 +12,9 @@
 .DS_Store
 *.pem
 
+# raw source media for /stories (4K reels) — processed copies live in public/videos
+/content 2/
+
 # debug logs
 npm-debug.log*
 yarn-debug.log*

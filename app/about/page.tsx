@@ -79,8 +79,8 @@ export default function AboutPage() {
             enableTilt
             enableMobileTilt={false}
             behindGlowEnabled
-            behindGlowColor="rgba(149, 204, 221, 0.6)"
-            innerGradient="linear-gradient(145deg, rgba(41,54,129,0.62) 0%, rgba(149,204,221,0.28) 100%)"
+            behindGlowColor="rgba(241, 158, 194, 0.55)"
+            innerGradient="linear-gradient(145deg, rgba(41,54,129,0.6) 0%, rgba(241,158,194,0.3) 100%)"
           />
           <p className="closing__quote">«حيث تتحوّل الأفكار إلى مشاريع حقيقية، وتُصنع قادة المستقبل من النساء الرائدات.»</p>
         </div>

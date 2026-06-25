@@ -13,16 +13,16 @@
   --grain: none;
   --icon: none;
   --behind-gradient: none;
-  --behind-glow-color: rgba(125, 190, 255, 0.67);
+  --behind-glow-color: rgba(241, 158, 194, 0.6);
   --behind-glow-size: 25%;
   --inner-gradient: none;
-  /* cool, on-brand iridescence instead of the full rainbow */
-  --sunpillar-1: hsl(196, 78%, 72%); /* sky */
-  --sunpillar-2: hsl(210, 84%, 74%); /* light blue */
-  --sunpillar-3: hsl(228, 62%, 72%); /* indigo-blue */
-  --sunpillar-4: hsl(188, 56%, 62%); /* teal */
-  --sunpillar-5: hsl(248, 48%, 74%); /* soft violet-blue */
-  --sunpillar-6: hsl(330, 58%, 82%); /* soft pink accent */
+  /* blue → pink iridescence (no teal) to match the brand */
+  --sunpillar-1: hsl(210, 84%, 76%); /* light blue */
+  --sunpillar-2: hsl(228, 62%, 74%); /* indigo-blue */
+  --sunpillar-3: hsl(248, 50%, 76%); /* soft violet-blue */
+  --sunpillar-4: hsl(322, 62%, 74%); /* rose */
+  --sunpillar-5: hsl(338, 70%, 80%); /* light pink */
+  --sunpillar-6: hsl(300, 40%, 80%); /* soft mauve */
   --sunpillar-clr-1: var(--sunpillar-1);
   --sunpillar-clr-2: var(--sunpillar-2);
   --sunpillar-clr-3: var(--sunpillar-3);

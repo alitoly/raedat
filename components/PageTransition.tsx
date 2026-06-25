@@ -10,8 +10,8 @@ import { motion } from 'motion/react';
 
 const PANELS = 9;
 const CENTER = (PANELS - 1) / 2;
-// theme blues — light sky (center) -> deep navy (edges)
-const COLORS = ['#293681', '#33459a', '#4274D9', '#6ba3d9', '#95CCDD', '#6ba3d9', '#4274D9', '#33459a', '#293681'];
+// palette — light pink (center) -> periwinkle -> deep navy (edges)
+const COLORS = ['#304463', '#46597f', '#7d8abc', '#c79ac8', '#ffc7ed', '#c79ac8', '#7d8abc', '#46597f', '#304463'];
 
 const COVER_MS = 460;
 const REVEAL_MS = 520;
