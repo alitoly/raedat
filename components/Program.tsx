@@ -5,7 +5,7 @@ export default function Program() {
     <section className="section" id="program">
       <div className="section__head" data-reveal>
         <span className="kicker">البرنامج المتكامل</span>
-        <h2 className="display section__title">رحلة من عشر محطات</h2>
+        <h2 className="display section__title">رحلة من اثنتي عشرة محطة</h2>
         <p className="section__intro">
           مسارٌ متّصل يربط محطات البرنامج من أول فكرة إلى التوسّع والاستدامة — كل محطة تبني على التي قبلها.
         </p>
