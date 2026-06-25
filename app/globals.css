@@ -667,8 +667,22 @@ img { display: block; max-width: 100%; }
 
 /* ===== gallery (3D dome) ===== */
 .page--gallery { padding-top: 0; }
-.gallery-page { position: relative; background: #1b2440; }
-.gallery-stage { position: relative; width: 100%; height: 100svh; min-height: 560px; }
+.gallery-page { position: relative; isolation: isolate; background: #171f38; overflow: clip; }
+/* periwinkle-navy depth + soft pink/periwinkle glows; edges meet the dome's overlay-blur color */
+.gallery-stage {
+  position: relative; width: 100%; height: 100svh; min-height: 560px;
+  background:
+    radial-gradient(48% 40% at 20% 12%, rgba(233, 138, 192, 0.30), transparent 62%),
+    radial-gradient(46% 44% at 84% 92%, rgba(125, 138, 188, 0.32), transparent 64%),
+    radial-gradient(125% 100% at 50% 36%, #36426e 0%, #232c52 44%, #171f38 80%);
+}
+/* opened image: show the FULL photo, large, with a pink ring */
+.gallery-page .viewer .enlarge,
+.gallery-page .enlarge-closing { background: #10162b; box-shadow: 0 40px 90px -24px rgba(0,0,0,.78), 0 0 0 1px rgba(255,199,237,.3); }
+.gallery-page .viewer .enlarge img,
+.gallery-page .enlarge-closing img { object-fit: contain; }
+/* crisp edge on the dome tiles */
+.gallery-page .item__image { box-shadow: inset 0 0 0 1px rgba(255,255,255,.08); }
 .gallery-head {
   position: absolute; inset-block-start: clamp(86px, 12vh, 140px); inset-inline: 0;
   z-index: 6; text-align: center; pointer-events: none; padding: 0 20px;

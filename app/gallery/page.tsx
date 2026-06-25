@@ -53,11 +53,14 @@ export default function GalleryPage() {
         <DomeGallery
           images={galleryImages}
           grayscale={false}
-          overlayBlurColor="#222c49"
-          imageBorderRadius="22px"
-          openedImageBorderRadius="22px"
+          overlayBlurColor="#171f38"
+          imageBorderRadius="20px"
+          openedImageBorderRadius="20px"
           fit={0.55}
           minRadius={420}
+          padFactor={0.08}
+          openedImageWidth=""
+          openedImageHeight=""
         />
       </div>
 
